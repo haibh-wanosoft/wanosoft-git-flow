@@ -1,3 +1,5 @@
+![Screenshot](avatar_wano.jpg)
+
 ## Wanosoft Git flow
 
 Đây là quy trình làm việc với git dành riêng cho đội ngũ nhân viên của Wanosoft. Nó có thể được thay đổi để phù hợp với từng dự án.
