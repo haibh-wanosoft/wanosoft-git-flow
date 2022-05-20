@@ -1,4 +1,5 @@
 ![Screenshot](avatar_wano.jpg)
+<img src="avatar_wano.jpg" alt=""  width="200" height="400" />
 
 ## Wanosoft Git flow
 
