@@ -25,8 +25,8 @@ Khi source code trong nhánh develop đã ổn định và sẵn sàng để đ�
 
 ### Quy trình git
 
-`một tính năng sẽ tương ứng với 1 branch (nhánh), có thể có nhiều commit trong 1 branch`
-`ví dụ bạn được giao tính năng làm api get list user`
+- `một tính năng sẽ tương ứng với 1 branch (nhánh), có thể có nhiều commit trong 1 branch.`
+- `ví dụ bạn được giao tính năng làm api get list user.`
 
 1. Dev hãy checkout sang develop và đồng bộ code local với code remote.
    ```sh
@@ -47,15 +47,15 @@ Khi source code trong nhánh develop đã ổn định và sẵn sàng để đ�
    $ git add .
    $ git commit -m "feature/get-users done get list user" # <--- nội dung comment sẽ là {feature/{name} abc...}
    ```
-4. Push code lên origin.
+4. Push code lên remote.
    ```sh
    $ git push origin feature/get-users
    ```
-5. Sau khi push thành công thì lên web bitbucket | gitlab | github để tạo pull request
-   `Tạo pull request là hành dộng yêu cầu hợp nhất nhánh này vào nhánh khác`
-   `Cụ thể là trong dự án thì khi tạo pull request sẽ là tạo từ hợp nhất từ nhánh feature/get-users vào nhánh develop`
-   `from feature/get-users to develop`
-   5.1 Trường hợp khi taọ pull-request nhưng bị báo conflict(nghĩa là nhánh của bạn đang làm bị xung đột với nhánh chính)
+5. Sau khi push thành công thì lên web bitbucket | gitlab | github để tạo pull request.
+   - `Tạo pull request là hành động yêu cầu hợp nhất nhánh này vào nhánh khác.`
+   - `Cụ thể là trong dự án thì khi tạo pull request sẽ là tạo từ hợp nhất từ nhánh feature/get-users vào nhánh develop.`
+   - `from feature/get-users to develop.`
+     5.1 Trường hợp khi taọ pull-request nhưng bị báo conflict(nghĩa là nhánh của bạn đang làm bị xung đột với nhánh chính)
    ```sh
    $ git checkout develop
    ```
@@ -68,8 +68,8 @@ Khi source code trong nhánh develop đã ổn định và sẵn sàng để đ�
    ```sh
    $ git merge develop
    ```
-   `Sau khi hợp nhất nhánh develop vào nhánh của mình thì coder sẽ phải đi sửa những file bị conflict`
-   `Sau khi sửa xong tất cả các file bị conflict thì`
+   - `Sau khi hợp nhất nhánh develop vào nhánh của mình thì coder sẽ phải đi sửa những file bị conflict`
+   - `Sau khi sửa xong tất cả các file bị conflict thì: `
    ```sh
    $ git add .
    ```
@@ -100,8 +100,8 @@ Khi source code trong nhánh develop đã ổn định và sẵn sàng để đ�
 1. Cách đặt tên nhánh
 
 - Đối với task
-  `feature/{name_task}`
+  - `feature/{name_task}`
 - Đối với bug trong quá trình phát triển (nghĩa là ở môi trường dev hoặc stagging)
-  `bugfix/{name_task_dd_mm_yy}`
+  - `bugfix/{name_task_dd_mm_yy}`
 - Đối với bug trên production (nghĩa là trên mội trường đã phát hành sản phẩm đến tay người dùng)
-  `hotfix/{name_task_dd_mm_yy}`
+  - `hotfix/{name_task_dd_mm_yy}`
