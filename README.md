@@ -23,10 +23,6 @@ Repo trung tâm sẽ có hai nhánh chính luôn ở trạng thái code mới, c
 
 Khi source code trong nhánh develop đã ổn định và sẵn sàng để được release, tất cả các thay đổi sẽ được hợp nhất(merged) trở lại vào `master` và sẽ được gắn liền với một số hiệu phiên bản
 
-### Các nhánh hỗ trợ (hoặc nhánh phụ)
-
-Mỗi nhánh này tương ứng với 1 task trên trình quản lý dự án, sử dụng các nhánh này để dễ dàng phát triển song song giữa các thành viên trong nhóm, dễ dàng theo dõi các task, feature, bug, hotfix, pre-release . Không giống như các nhánh chính, các nhánh này luôn có thời gian sống hạn chế, vì cuối cùng chúng sẽ bị loại bỏ.
-
 ### Quy trình git
 
 `một tính năng sẽ tương ứng với 1 branch (nhánh), có thể có nhiều commit trong 1 branch`
