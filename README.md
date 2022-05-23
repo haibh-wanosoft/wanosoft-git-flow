@@ -54,33 +54,44 @@ Khi source code trong nhánh develop đã ổn định và sẵn sàng để đ�
    $ git push origin feature/get-users
    ```
 5. Sau khi push thành công thì lên web `bitbucket | gitlab | github` để tạo pull request.
+
    - Tạo pull request là hành động yêu cầu hợp nhất nhánh này vào nhánh khác.
    - Cụ thể là trong dự án thì khi tạo pull request sẽ là tạo từ hợp nhất từ nhánh feature/get-users vào nhánh develop.
    - from feature/get-users to develop.
-     5.1 Trường hợp khi taọ pull-request nhưng bị báo conflict (nghĩa là nhánh của bạn đang làm bị xung đột với nhánh chính),
+
+     5.1 Trường hợp khi taọ pull-request nhưng bị báo conflict (nghĩa là nhánh của bạn đang làm bị xung đột với nhánh chính).
+
    ```sh
    $ git checkout develop
    ```
+
    ```sh
    $ git pull origin develop
    ```
+
    ```sh
    $ git checkout feature/get-users
    ```
+
    ```sh
    $ git merge develop
    ```
+
    - Sau khi hợp nhất nhánh develop vào nhánh của mình thì coder sẽ phải đi sửa những file bị conflict
    - Sau khi sửa xong tất cả các file bị conflict thì:
+
    ```sh
    $ git add .
    ```
+
    ```sh
    $ git commit -m "feature/get-users fix conflict"
    ```
+
    ```sh
    $ git push origin feature/get-users
    ```
+
 6. Sau khi tạo xong thì gửi link URL của pull-request cho reviewer (người review code) trên Trello hoặc Backlog (công cụ quản lý task) để tiến hành review code.
 
    6.1. Trong trường hợp reviewer có yêu cầu chỉnh sửa, hãy thực hiện lại bước 3 và bước 4. Sau khi thực hiện xong thì báo lại reviewer
